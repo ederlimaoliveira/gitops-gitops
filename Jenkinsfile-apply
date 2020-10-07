@@ -16,7 +16,7 @@ pipeline {
         sh 'oc apply --dry-run --validate -k config'
       }
     }
-    stage ('Apply resources') {
+    stage ('resources') {
       when {
         branch 'master'
       }
